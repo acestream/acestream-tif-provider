@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="setup_update_channels">Оновити список каналів</string>
+    <string name="channels_fetch_error_message">Не вдалось завантажити список каналів. Перевірте з\'єднання та спробуйте знову.</string>
+    <string name="setup_cancel">Вийти</string>
+    <string name="setup_cancel_desc">Повернутись</string>
+    <string name="setup_description">Синхронізація списку каналів</string>
+    <string name="setup_sync_interval">Інтервал синхронізації</string>
+    <string name="setup_title">Налаштування списку каналів</string>
+    <string name="setup_update_channels_desc">Синхронізувати</string>
+    <string name="sync_completed">Синхронізацію завершено</string>
+
+    <plurals name="hours_count">
+        <item quantity="one">%d година</item>
+        <item quantity="few">%d години</item>
+        <item quantity="many">%d годин</item>
+        <item quantity="other">%d годин</item>
+    </plurals>
+
+    <string name="open_in_video_player">Відкрити у сторонньому плеєрі</string>
+
+
+    <string name="setup_intro_title">Налаштування списку каналів</string>
+    <string name="setup_intro_description">Синхронізація списку каналів</string>
+    <string name="setup_begin_title">Розпочати</string>
+    <string name="setup_begin_desc">Додати канали</string>
+
+    <string name="player_engine_title">Плеєр</string>
+    <string name="setup_finished">Продовжити</string>
+    <string name="setup_finished_desc">Синхронізацію завершено</string>
+    <string name="sync_completed_title">Синхронізацію завершено</string>
+    <string name="syncing_desc">Це може зайняти декілька хвилин</string>
+    <string name="syncing_progress_title">Синхронізація…</string>
+    <string name="syncing_title">Оновлення списку каналів</string>
+    <string name="sync_completed_desc">Готово!</string>
+    <string name="settings_title">Налаштування списку каналів</string>
+    <string name="setings_description">Налаштування параметрів синхронізації списку каналів</string>
+
+    <string name="ace_stream_engine_staring">Запуск AceStream Engine</string>
+    <string name="video_stream_not_availaible">Трансляція не доступна</string>
+    <string name="ace_stream_engine_stared">AceStream Engine запущено</string>
+    <string name="ace_stream_engine_failed_to_start">Не вдалось запустити AceStream Engine</string>
+    <string name="error_broadcast_is_unavailable">Трансляція недоступна</string>
+    <string name="epg_no_info">Немає інформації</string>
+</resources>

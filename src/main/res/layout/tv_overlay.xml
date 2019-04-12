@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:background="@color/tvactivity_background"
+    >
+    <TextView
+        android:id="@+id/msg_view"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/tvview_block_text_color"
+        android:text="Loading...."
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/debug_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/tvview_block_text_color"
+        android:visibility="gone"
+        />
+</RelativeLayout>

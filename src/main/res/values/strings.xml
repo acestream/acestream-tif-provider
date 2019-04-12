@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="input_label" translatable="false">AceStream Channels</string>
+    <string name="channels_fetch_error_message">Unable to download channels list. Check your connection and try again!</string>
+
+    <string name="setup_title">Setup live channels</string>
+    <string name="setup_description">Synchronize your live channels playlist</string>
+    <string name="setup_update_channels">Update your channels</string>
+    <string name="setup_update_channels_desc">Sync Now</string>
+
+    <string name="sync_completed">Synchronization completed</string>
+
+
+    <string name="setup_cancel">Cancel</string>
+    <string name="setup_cancel_desc">Go back</string>
+    <string name="setup_sync_interval">Synchronization interval</string>
+
+    <plurals name="hours_count">
+        <item quantity="one">%d hour</item>
+        <item quantity="few">%d hours</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+
+    <string name="open_in_video_player">Open in external Video Player</string>
+
+
+    <string name="player_engine_title">Player Engine</string>
+    <string name="exoplayer_engine_title" translatable="false">ExoPlayer</string>
+    <string name="exoplayer_engine_desc" translatable="false">Google ExoPlayer</string>
+    <string name="mediaplayer_engine_title" translatable="false">Media Player</string>
+    <string name="mediaplayer_engine_desc" translatable="false">Android Media Player</string>
+    <string name="vlc_engine_title" translatable="false">LibVLC</string>
+    <string name="vlc_engine_desc" translatable="false">VideoLAN LibVLC</string>
+
+    <string name="setup_intro_title">Setup live channels</string>
+    <string name="setup_intro_description">Synchronize your live channels playlist</string>
+    <string name="setup_begin_title">Begin</string>
+    <string name="setup_begin_desc">Add channels</string>
+
+
+    <string name="settings_title">Configure live channels</string>
+    <string name="setings_description">Configure your live channels playlist</string>
+
+    <string name="syncing_title">Syncing Channels</string>
+    <string name="syncing_desc">This can take several minutes</string>
+    <string name="syncing_progress_title">Processing…</string>
+
+    <string name="sync_completed_title">Synchronization completed</string>
+    <string name="sync_completed_desc">Enjoy!</string>
+
+
+    <string name="setup_finished">Continue</string>
+    <string name="setup_finished_desc">Synchronization finished</string>
+
+    <string name="ace_stream_engine_staring">Staring AceStream Engine</string>
+    <string name="ace_stream_engine_stared">AceStream Engine Started</string>
+    <string name="ace_stream_engine_failed_to_start">Failed to start AceStream Engine</string>
+    <string name="video_stream_not_availaible">Stream not available</string>
+    <string name="error_broadcast_is_unavailable">Channel is unavailable</string>
+    <string name="epg_no_info">No info</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="icon_background">#4A4F51</color>
+    <color name="icon_alt_background">#2A2F51</color>
+
+    <color name="setup_wizard_actions_background">#37474f</color>
+    <color name="setup_wizard_subactions_background">#37474f</color>
+
+    <color name="tvactivity_background">#000000</color>
+    <color name="tvview_block_text_color">#EEEEEE</color>
+</resources>
