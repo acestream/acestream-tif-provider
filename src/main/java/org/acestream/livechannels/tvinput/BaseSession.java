@@ -41,6 +41,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -883,40 +884,6 @@ abstract public class BaseSession
         }
     }
 
-    private float readUsage() {
-        try {
-            RandomAccessFile reader = new RandomAccessFile("/proc/stat", "r");
-            String load = reader.readLine();
-
-            String[] toks = load.split(" ");
-
-            long idle1 = Long.parseLong(toks[5]);
-            long cpu1 = Long.parseLong(toks[2]) + Long.parseLong(toks[3]) + Long.parseLong(toks[4])
-                    + Long.parseLong(toks[6]) + Long.parseLong(toks[7]) + Long.parseLong(toks[8]);
-
-            try {
-                Thread.sleep(360);
-            } catch (Exception e) {}
-
-            reader.seek(0);
-            load = reader.readLine();
-            reader.close();
-
-            toks = load.split(" ");
-
-            long idle2 = Long.parseLong(toks[5]);
-            long cpu2 = Long.parseLong(toks[2]) + Long.parseLong(toks[3]) + Long.parseLong(toks[4])
-                    + Long.parseLong(toks[6]) + Long.parseLong(toks[7]) + Long.parseLong(toks[8]);
-
-            return (float)(cpu2 - cpu1) / ((cpu2 + idle2) - (cpu1 + idle1));
-
-        } catch (IOException ex) {
-            Log.v(TAG, "error", ex);
-        }
-
-        return 0;
-    }
-
     private void displayEngineStatus(StatusResponse status, final NowPlaying session) {
         String msg = null;
         String debugMsg = null;
@@ -927,18 +894,14 @@ abstract public class BaseSession
             ActivityManager.MemoryInfo mi = new ActivityManager.MemoryInfo();
             ActivityManager activityManager = (ActivityManager) mContext.getSystemService(ACTIVITY_SERVICE);
             activityManager.getMemoryInfo(mi);
-            double totalMegs = mi.totalMem / 0x100000L;
-            double availableMegs = mi.availMem / 0x100000L;
 
             //Percentage can be calculated for API 16+
             double percentAvail = mi.availMem / (double) mi.totalMem * 100.0;
             double percentUsed = 100 - percentAvail;
 
-            float cpu = readUsage();
-
             debugMsg = String.format(
-                    "CPU:%d%%\nRAM:%d%%",
-                    Math.round(cpu * 100),
+                    Locale.getDefault(),
+                    "RAM:%d%%",
                     Math.round(percentUsed)
             );
         }
@@ -966,6 +929,7 @@ abstract public class BaseSession
 
             if(showMessage) {
                 msg = String.format(
+                        Locale.getDefault(),
                         "%s %d%%\nPeers: %d\nDL: %d Kb/s",
                         statusName,
                         status.progress,
@@ -975,6 +939,7 @@ abstract public class BaseSession
 
             if(showDebugInfo) {
                 debugMsg += String.format(
+                        Locale.getDefault(),
                         "\nPeers:%d DL:%d UL:%d",
                         status.peers,
                         status.speed_down,
