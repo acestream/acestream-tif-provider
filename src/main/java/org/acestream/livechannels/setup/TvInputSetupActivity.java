@@ -7,6 +7,7 @@ import androidx.leanback.app.GuidedStepFragment;
 import org.acestream.engine.controller.Engine;
 import org.acestream.livechannels.model.AppContext;
 import org.acestream.livechannels.utils.TvContractUtils;
+import org.acestream.sdk.AceStream;
 
 
 public class TvInputSetupActivity extends Activity
@@ -14,6 +15,8 @@ public class TvInputSetupActivity extends Activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        AceStream.getBaseApplicationFactory().initialize(getApplicationContext());
 
         GuidedStepFragment fragment;
         Engine engine = AppContext.getEngineFactory().getInstance();
