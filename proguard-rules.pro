@@ -51,5 +51,5 @@
     java.lang.Object readResolve();
 }
 
--keep class org.acestream.livechannels.** implements java.io.Serializable { *; }
+-keep class org.acestream.livechannels.** { *; }
 
