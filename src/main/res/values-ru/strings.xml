@@ -43,6 +43,5 @@
     <string name="video_stream_not_availaible">Трансляция не доступна</string>
     <string name="ace_stream_engine_stared">AceStream Engine запущен</string>
     <string name="ace_stream_engine_failed_to_start">Не удалось запустить AceStream Engine</string>
-    <string name="error_broadcast_is_unavailable">Трансляция недоступна</string>
     <string name="epg_no_info">Нет информации</string>
 </resources>

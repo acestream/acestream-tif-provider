@@ -56,6 +56,5 @@
     <string name="ace_stream_engine_stared">AceStream Engine Started</string>
     <string name="ace_stream_engine_failed_to_start">Failed to start AceStream Engine</string>
     <string name="video_stream_not_availaible">Stream not available</string>
-    <string name="error_broadcast_is_unavailable">Channel is unavailable</string>
     <string name="epg_no_info">No info</string>
 </resources>
