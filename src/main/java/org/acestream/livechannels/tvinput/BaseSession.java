@@ -500,6 +500,10 @@ abstract public class BaseSession
     }
 
     @Override
+    public void onAuthUpdated() {
+    }
+
+    @Override
     public void onRestartPlayer() {
     }
 

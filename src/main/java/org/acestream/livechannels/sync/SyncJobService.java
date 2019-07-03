@@ -252,7 +252,12 @@ public class SyncJobService extends JobService implements ServiceClient.Callback
         Log.d(TAG, "onEPGUpdated");
     }
 
+    @Override
     public void onSettingsUpdated() {
+    }
+
+    @Override
+    public void onAuthUpdated() {
     }
 
     @Override
